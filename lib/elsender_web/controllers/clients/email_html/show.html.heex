@@ -1,0 +1,19 @@
+<.header>
+  Email <%= @email.id %>
+  <:subtitle>This is a email record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/clients/emails/#{@email}/edit"}>
+      <.button>Edit email</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Name"><%= @email.name %></:item>
+  <:item title="Email"><%= @email.email %></:item>
+  <:item title="Phone"><%= @email.phone %></:item>
+  <:item title="Getcatalog"><%= @email.getCatalog %></:item>
+  <:item title="Getprice"><%= @email.getPrice %></:item>
+</.list>
+
+<.back navigate={~p"/clients/emails"}>Back to emails</.back>

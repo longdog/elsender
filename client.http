@@ -1,0 +1,12 @@
+# -*- restclient -*-
+
+POST http://localhost:4000/api/emails
+Content-Type: application/json
+
+{"email":{
+    "name": "Иван",
+    "email": "aaa@fff.ru",
+    "phone": "1111",
+    "getCatalog": true,
+    "getPrice": false
+}}

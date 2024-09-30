@@ -1,0 +1,8 @@
+<.header>
+  New Email
+  <:subtitle>Use this form to manage email records in your database.</:subtitle>
+</.header>
+
+<.email_form changeset={@changeset} action={~p"/clients/emails"} />
+
+<.back navigate={~p"/clients/emails"}>Back to emails</.back>
